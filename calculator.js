@@ -23,3 +23,13 @@ document.getElementById("back").addEventListener("click", function () {
     // back key button by id and assign value of calculation to dltNum variable then assign calculation by substring dltNum variable from 0 to (length of dltNum -1 )
     //console.log(dltNum);    
 })
+
+// Return output of calculation on click ( = ) equal button
+
+document.getElementById("equal").addEventListener("click", function() {
+    //console.log("Equal button clicked.")
+    var calculate = calculation.textContent;
+    result.textContent = eval(calculate);
+    //console.log(result.textContent);
+    calculation.textContent = result.textContent;
+})
