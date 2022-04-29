@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="myStyle.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <div class="screenContent">
+                <p class="calculation"><span id="calculationText"></span></p>
+                <p class="result"><span id="resultText">0</span></p>
+            </div>
+        </div>
+
+    <!-- Calculator Keys -->
+    <table>
+        <tr>
+            <td><input type="button" class="btn operator" value="C"></td>
+            <td><input type="button" class="btn operator" value="<"></td>
+            <td><input type="button" class="btn math" value="/"></td>
+            <td><input type="button" class="btn math" value="x"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" class="btn" value="7"></td>
+            <td><input type="button" class="btn" value="8"></td>
+            <td><input type="button" class="btn" value="9"></td>
+            <td><input type="button" class="btn math" value="-"></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" class="btn" value="4"></td>
+            <td><input type="button" class="btn" value="5"></td>
+            <td><input type="button" class="btn" value="6"></td>
+            <td><input type="button" class="btn math" value="+"></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" class="btn" value="1"></td>
+            <td><input type="button" class="btn" value="2"></td>
+            <td><input type="button" class="btn" value="3"></td>
+            <td rowspan="2"><input type="button" class="btn operator" value="=" style="height: 100px"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" class="btn" value="0" style="width: 100px;"></td>
+            <td><input type="button" class="btn" value="."></td>
+        </tr>
+    </table>
+    
+</div>
+
+    
+
+</body>
+</html>
